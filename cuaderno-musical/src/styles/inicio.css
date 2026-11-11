@@ -1,0 +1,9 @@
+.imagen{
+    opacity: 0.2;
+    object-position: center;
+}
+
+.imagen > img{
+    max-width: 100%;
+    height: auto;
+}
