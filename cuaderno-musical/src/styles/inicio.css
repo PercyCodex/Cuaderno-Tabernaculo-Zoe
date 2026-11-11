@@ -1,9 +1,102 @@
 .imagen{
-    opacity: 0.2;
-    object-position: center;
+    position: relative;
 }
 
 .imagen > img{
+    position: absolute;
     max-width: 100%;
     height: auto;
+    opacity: 0.2;
+    z-index: 0;
 }
+
+
+.tituloC{
+    position: absolute;
+    top: clamp(30px, 4.2vw, 100px);
+}
+
+.titulo{
+    animation: tituloAparece 4s 1 both;
+    color: azure;
+    font-size: clamp(0.5rem, 2vw + 1rem, 3.7rem);
+    gap: 0.3rem;
+}
+
+.titulo > span{
+    animation: movimientoS 5s infinite linear;
+    
+}
+.titulo > span:nth-child(1){
+    animation-delay: 1s;
+}
+.titulo > span:nth-child(2){
+    animation-delay: 1.15s;
+}
+.titulo > span:nth-child(3){
+    animation-delay: 1.3s;
+}
+.titulo > span:nth-child(4){
+    animation-delay: 1.45s;
+}
+.titulo > span:nth-child(5){
+    animation-delay: 1.6s;
+}
+.titulo > span:nth-child(6){
+    animation-delay: 1.75s;
+}
+.titulo > span:nth-child(7){
+    animation-delay: 1.9s;
+}
+.titulo > span:nth-child(8){
+    animation-delay: 2.05s;
+}
+.titulo > span:nth-child(9){
+    animation-delay: 2.2s;
+}
+
+.titulo > span:nth-child(10){
+    animation-delay: 2.35s;
+}
+.titulo > span:nth-child(11){
+    animation-delay: 2.5s;
+}
+/*Region titulo keyframes*/
+
+/*Region de titulo efecto de entrada */
+@keyframes tituloAparece{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+/*End Region */
+
+/*Region movimineto de los span*/
+@keyframes movimientoS{
+    0%{
+        transform: translateY(0px);
+    }
+    15%{
+        transform: translateY(-2.5px);
+    }
+    30%{
+        transform: translateY(2.5px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+
+    75%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/*End Region */
+
+/*End Region Keyframes*/
