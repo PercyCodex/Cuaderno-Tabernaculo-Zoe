@@ -14,6 +14,9 @@
 .tituloC{
     position: absolute;
     top: clamp(30px, 4.2vw, 100px);
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
 }
 
 .titulo{
@@ -100,3 +103,48 @@
 /*End Region */
 
 /*End Region Keyframes*/
+
+
+.tarjeta-ensayo {
+    width: 100%;
+    max-width: 520px;
+    background: rgba(32, 30, 28, 0.72);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    padding: 20px 24px;
+    color: #f3f4f6;
+    position: relative;
+    
+}
+
+.ensayo-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+    
+    
+}
+
+.ver-todos {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.numero-circulo {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.badge-tono {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 2px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
