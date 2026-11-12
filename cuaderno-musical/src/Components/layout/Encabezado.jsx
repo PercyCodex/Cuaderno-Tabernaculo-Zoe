@@ -1,16 +1,18 @@
 import React from 'react'
 import logo from '../../assets/logo/logo.png'
-import { Link } from 'react-router-dom';
 import '../../styles/encabezado.css';
 import { useState } from 'react';
 import Inicio from '../../Pages/Inicio';
+import { Link, useLocation } from "react-router-dom";
 
 function Encabezado() {
+    const location = useLocation();
+
 
     const [modoOscuro, setModoOscuro] = useState(false);
 
     return (
-        <nav className="navbar navbar-expand-md navbar-dark navbar-custom">
+        <nav className="navbar navbar-expand-md navbar-dark navbar-custom ">
             <div className="container-fluid">
 
                 
@@ -56,6 +58,8 @@ function Encabezado() {
                             <Link className="nav-link" to="/Herramientas">Herramientas</Link>
                         </li>
 
+                        
+
                     </ul>
 
                     
@@ -74,7 +78,7 @@ function Encabezado() {
                         </button>
 
                         <button className="btn btn-login">
-                            Iniciar sesión
+                            <Link to="/Login" className='login-sesion' state={{ background: location }}>Iniciar sesión</Link>
                         </button>
 
                         <button className="btn btn-register">

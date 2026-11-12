@@ -32,8 +32,8 @@ function Inicio() {
                             <span>S</span>
                         </h3>
                         
-                        <div>
-                            <h1 className="titulo-Principal col-12 d-flex justify-content-center">TABERNACULO ZOE</h1>
+                        <div className='col-12 contenedor-p'>
+                            <h1 className="titulo-Principal col-9 ">A CANCIONERO ZOE</h1>
                         </div>
 
                         <div className="tarjeta-ensayo mt-3 ">
