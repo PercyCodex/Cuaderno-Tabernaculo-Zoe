@@ -19,9 +19,9 @@ function Encabezado() {
                         <img className='imagen-logo' src={logo} width={75} alt="logo" />
                     </div>
 
-                    <div>
-                        <h6 className="mb-0">Cuaderno Musical</h6>
-                        <small>142 canciones</small>
+                    <div >
+                        <h6 className="mb-0">Cancionero</h6>
+                        <h5>ZOE</h5>
                     </div>
                 </Link>
 

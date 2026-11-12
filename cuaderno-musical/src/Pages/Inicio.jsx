@@ -18,7 +18,7 @@ function Inicio() {
                 <div className="imagen col-12  d-flex justify-content-center">
                     <img className='img-fluid' src={imgf} alt="imagen" />
                     <div className="col-12 d-flex flex-column justify-content-center g-4 tituloC">
-                        <h1 className="titulo d-flex justify-content-center">
+                        <h3 className="titulo d-flex justify-content-center">
                             <span>B</span>
                             <span>I</span>
                             <span>E</span>
@@ -30,7 +30,11 @@ function Inicio() {
                             <span>D</span>
                             <span>O</span>
                             <span>S</span>
-                        </h1>
+                        </h3>
+                        
+                        <div>
+                            <h1 className="titulo-Principal col-12 d-flex justify-content-center">TABERNACULO ZOE</h1>
+                        </div>
 
                         <div className="tarjeta-ensayo mt-3 ">
                             <div className="ensayo-header d-flex justify-content-between align-items-center">
