@@ -22,7 +22,7 @@
 .titulo{
     animation: tituloAparece 4s 1 both;
     color: azure;
-    font-size: clamp(0.5rem, 3vw, 4.2rem);
+    font-size: clamp(0.8rem, 2vw, 3rem);
     gap: 0.3rem;
 }
 
